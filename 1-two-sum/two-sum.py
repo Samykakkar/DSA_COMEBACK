@@ -9,12 +9,14 @@ class Solution:
         # return[]
 
 #OPTIMISED
-        nummap={}
-        n=len(nums)
-
-        for i in range(n):
+         mapp={}
+         n=len(nums)
+       
+         for i in range(n):
             diff=target-nums[i]
-            if diff in nummap:
-                return[nummap[diff],i]
-            nummap[nums[i]]=i
-        return[]    
+            if diff in mapp:
+                return [mapp[diff],i]
+            mapp[nums[i]]=i
+         return []
+    
+
